@@ -293,3 +293,117 @@
 }
 .article-cta h4 { font-size: 1.4rem; margin-bottom: 12px; }
 .article-cta p { opacity: .8; margin-bottom: 20px; font-size: .95rem; }
+
+/* ============================================================
+   BLOG — RESPONSIVE
+   ============================================================ */
+
+/* ---- Tablet (≤ 768px) ---- */
+@media (max-width: 768px) {
+  /* Blog hero */
+  .blog-hero { padding: 110px 0 44px; }
+  .blog-hero h1 { font-size: clamp(1.5rem, 5vw, 2rem); margin-bottom: 14px; }
+  .blog-hero-meta { gap: 10px; font-size: 0.8rem; flex-wrap: wrap; }
+
+  /* Article wrapper */
+  .article-wrapper { padding: 40px 0; }
+  .article-content { font-size: 0.95rem; line-height: 1.75; }
+  .article-content h2 { font-size: 1.35rem; margin: 36px 0 14px; }
+  .article-content h3 { font-size: 1.1rem; margin: 24px 0 12px; }
+
+  /* TOC box */
+  .toc-box { padding: 18px 20px; }
+
+  /* Key takeaway / tip / warning boxes */
+  .key-takeaway,
+  .tip-box,
+  .warning-box { padding: 16px 18px; }
+
+  /* Share section */
+  .share-section { padding: 18px; }
+  .share-btn { font-size: 0.8rem; padding: 8px 14px; gap: 6px; }
+
+  /* Sidebar — no longer sticky; becomes a normal flow element */
+  .blog-sidebar { position: static; top: auto; }
+  .sidebar-widget { padding: 18px; }
+
+  /* Related articles */
+  .related-articles { padding: 44px 0; }
+  .related-articles h3 { font-size: 1.35rem; margin-bottom: 24px; }
+
+  /* Data table — horizontal scroll */
+  .data-table {
+    display: block;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    white-space: nowrap;
+    font-size: 0.85rem;
+  }
+  .data-table th,
+  .data-table td { padding: 10px 12px; }
+
+  /* Author box */
+  .author-box { padding: 20px; gap: 16px; }
+  .author-avatar-lg { width: 68px; height: 68px; font-size: 1.3rem; }
+
+  /* Article CTA */
+  .article-cta { padding: 28px 20px; }
+  .article-cta h4 { font-size: 1.2rem; }
+}
+
+/* ---- Small Mobile (≤ 480px) ---- */
+@media (max-width: 480px) {
+  /* Blog hero */
+  .blog-hero { padding: 96px 0 36px; }
+  .blog-hero h1 { font-size: 1.4rem; }
+  .blog-hero-meta { font-size: 0.76rem; gap: 8px; }
+
+  /* Article content */
+  .article-content { font-size: 0.9rem; }
+  .article-content h2 { font-size: 1.2rem; margin: 28px 0 12px; }
+  .article-content h3 { font-size: 1rem; }
+  .article-content ul,
+  .article-content ol { padding-left: 18px; }
+
+  /* Author box — stack vertically & center */
+  .author-box {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 16px;
+    gap: 12px;
+  }
+  .author-avatar-lg { width: 60px; height: 60px; font-size: 1.1rem; }
+  .author-bio { font-size: 0.83rem; }
+
+  /* Share buttons — wrap & full-row */
+  .share-section { padding: 14px; }
+  .share-section .d-flex { flex-wrap: wrap; gap: 8px; }
+  .share-btn { flex: 1 1 calc(50% - 4px); justify-content: center; }
+
+  /* TOC */
+  .toc-box { padding: 14px 16px; }
+  .toc-list li { font-size: 0.85rem; }
+
+  /* Article CTA */
+  .article-cta { padding: 20px 14px; border-radius: var(--radius-lg); }
+  .article-cta h4 { font-size: 1.05rem; }
+  .article-cta p { font-size: 0.88rem; }
+
+  /* Sidebar recent posts */
+  .sidebar-recent-post { gap: 10px; }
+  .sidebar-recent-img { width: 52px; height: 52px; }
+
+  /* Related articles */
+  .related-articles { padding: 36px 0; }
+  .related-articles h3 { font-size: 1.2rem; }
+
+  /* Data table */
+  .data-table th,
+  .data-table td { padding: 8px 10px; font-size: 0.82rem; }
+
+  /* Key takeaway / tip / warning — narrower padding */
+  .key-takeaway,
+  .tip-box,
+  .warning-box { padding: 12px 14px; }
+}
