@@ -1,0 +1,1248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EMI Calculator — Plan Your Loan Repayment | Easy Loan Services</title>
+
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Use Easy Loan Services' free EMI Calculator to plan your loan repayment. Calculate monthly EMI for home, personal, car & business loans instantly with amortization schedule." />
+  <meta name="keywords" content="EMI calculator, loan EMI calculator, home loan EMI, personal loan EMI, car loan EMI, amortization schedule, loan repayment calculator, India" />
+  <meta name="author" content="Easy Loan Services" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.easyloanservices.in/pages/emi-calculator.html" />
+
+  <!-- Open Graph Tags -->
+  <meta property="og:title" content="EMI Calculator — Plan Your Loan Repayment | Easy Loan Services" />
+  <meta property="og:description" content="Calculate your monthly EMI instantly. Get a full amortization schedule, compare loan scenarios, and plan your finances with our free EMI calculator." />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1200&q=80" />
+  <meta property="og:url" content="https://www.easyloanservices.in/pages/emi-calculator.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Easy Loan Services" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="EMI Calculator | Easy Loan Services" />
+  <meta name="twitter:description" content="Free online EMI calculator with amortization schedule for all loan types in India." />
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1200&q=80" />
+
+  <!-- Schema Markup -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Easy Loan Services EMI Calculator",
+    "description": "Free online EMI calculator to compute monthly loan repayment amounts and generate full amortization schedules for home, personal, car, and business loans.",
+    "url": "https://www.easyloanservices.in/pages/emi-calculator.html",
+    "applicationCategory": "FinanceApplication",
+    "operatingSystem": "All",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "INR"
+    },
+    "provider": {
+      "@type": "FinancialService",
+      "name": "Easy Loan Services",
+      "url": "https://www.easyloanservices.in"
+    }
+  }
+  </script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Bootstrap 5 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
+
+  <!-- Font Awesome 6 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- AOS Animation -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="../css/style.css" />
+  <!-- Chatbot CSS -->
+  <link rel="stylesheet" href="../css/chatbot.css" />
+
+  <style>
+    :root {
+      --primary: #1a56db;
+      --primary-dark: #1240a8;
+      --accent: #10b981;
+      --dark: #0f172a;
+      --gray-100: #f8fafc;
+      --gray-200: #f1f5f9;
+      --gray-500: #64748b;
+      --gray-700: #334155;
+    }
+
+    body { font-family: 'Inter', sans-serif; color: var(--dark); }
+    h1, h2, h3, h4, h5, h6 { font-family: 'Poppins', sans-serif; }
+
+    /* ── Hero ── */
+    .emi-hero {
+      background: linear-gradient(135deg, #0f172a 0%, #1a56db 60%, #1e40af 100%);
+      padding: 120px 0 80px;
+      position: relative;
+      overflow: hidden;
+    }
+    .emi-hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 400'%3E%3Cpath fill='rgba(255,255,255,0.04)' d='M0,160L60,170.7C120,181,240,203,360,186.7C480,171,600,117,720,117.3C840,117,960,171,1080,181.3C1200,192,1320,160,1380,144L1440,128L1440,400L1380,400C1320,400,1200,400,1080,400C960,400,840,400,720,400C600,400,480,400,360,400C240,400,120,400,60,400L0,400Z'/%3E%3C/svg%3E") bottom/cover no-repeat;
+    }
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(255,255,255,0.12);
+      border: 1px solid rgba(255,255,255,0.25);
+      color: #fff;
+      padding: 6px 16px;
+      border-radius: 50px;
+      font-size: 0.82rem;
+      font-weight: 500;
+      backdrop-filter: blur(8px);
+      margin-bottom: 20px;
+    }
+    .hero-stat {
+      background: rgba(255,255,255,0.1);
+      border: 1px solid rgba(255,255,255,0.2);
+      border-radius: 12px;
+      padding: 16px 24px;
+      text-align: center;
+      backdrop-filter: blur(10px);
+    }
+    .hero-stat .stat-val { font-size: 1.5rem; font-weight: 700; color: #fff; font-family: 'Poppins', sans-serif; }
+    .hero-stat .stat-lbl { font-size: 0.78rem; color: rgba(255,255,255,0.75); margin-top: 2px; }
+
+    /* ── Calculator Card ── */
+    .calc-card {
+      background: #fff;
+      border-radius: 24px;
+      box-shadow: 0 25px 60px rgba(26,86,219,0.12), 0 4px 16px rgba(0,0,0,0.06);
+      overflow: hidden;
+    }
+    .calc-left { background: var(--gray-100); padding: 36px; }
+    .calc-right { padding: 36px; }
+
+    /* Sliders */
+    .slider-group { margin-bottom: 28px; }
+    .slider-group label {
+      font-size: 0.88rem;
+      font-weight: 600;
+      color: var(--gray-700);
+      margin-bottom: 4px;
+      display: flex;
+      justify-content: space-between;
+    }
+    .slider-value-badge {
+      background: linear-gradient(135deg, var(--primary), #3b82f6);
+      color: #fff;
+      padding: 3px 12px;
+      border-radius: 20px;
+      font-size: 0.82rem;
+      font-weight: 700;
+      font-family: 'Poppins', sans-serif;
+    }
+    .slider-minmax {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.75rem;
+      color: var(--gray-500);
+      margin-top: 4px;
+    }
+    input[type="range"] {
+      -webkit-appearance: none;
+      width: 100%;
+      height: 6px;
+      border-radius: 4px;
+      background: linear-gradient(to right, var(--primary) 0%, var(--primary) var(--val, 30%), #d1d5db var(--val, 30%), #d1d5db 100%);
+      outline: none;
+      cursor: pointer;
+      margin: 10px 0 4px;
+    }
+    input[type="range"]::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      background: #fff;
+      border: 3px solid var(--primary);
+      box-shadow: 0 2px 8px rgba(26,86,219,0.3);
+      cursor: pointer;
+      transition: transform 0.15s;
+    }
+    input[type="range"]::-webkit-slider-thumb:hover { transform: scale(1.2); }
+
+    /* Result Panel */
+    .result-panel {
+      background: linear-gradient(135deg, var(--primary) 0%, #1e40af 100%);
+      border-radius: 20px;
+      padding: 28px;
+      color: #fff;
+      position: relative;
+      overflow: hidden;
+    }
+    .result-panel::after {
+      content: '';
+      position: absolute;
+      top: -30px; right: -30px;
+      width: 120px; height: 120px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.08);
+    }
+    .emi-amount {
+      font-size: 2.8rem;
+      font-weight: 800;
+      font-family: 'Poppins', sans-serif;
+      line-height: 1;
+      margin: 8px 0;
+    }
+    .emi-amount .currency { font-size: 1.4rem; }
+    .emi-detail-item { font-size: 0.85rem; opacity: 0.85; }
+    .emi-detail-val { font-weight: 700; font-size: 1rem; opacity: 1; }
+
+    /* Donut Chart */
+    #emiDonut { max-width: 200px; max-height: 200px; }
+    .chart-legend-dot { width: 12px; height: 12px; border-radius: 50%; display: inline-block; }
+
+    /* Progress Bars */
+    .split-bar-wrap { background: #e5e7eb; border-radius: 8px; height: 10px; overflow: hidden; margin: 8px 0; }
+    .split-bar-fill { height: 100%; border-radius: 8px; transition: width 0.6s ease; }
+
+    /* ── Amortization Table ── */
+    .amort-section { background: var(--gray-100); }
+    .table-scroll { max-height: 420px; overflow-y: auto; border-radius: 12px; border: 1px solid #e5e7eb; }
+    .table-scroll::-webkit-scrollbar { width: 6px; }
+    .table-scroll::-webkit-scrollbar-track { background: #f1f5f9; }
+    .table-scroll::-webkit-scrollbar-thumb { background: var(--primary); border-radius: 3px; }
+    .amort-table thead th {
+      position: sticky;
+      top: 0;
+      background: var(--primary);
+      color: #fff;
+      font-size: 0.82rem;
+      font-weight: 600;
+      padding: 12px 14px;
+      white-space: nowrap;
+      border: none;
+    }
+    .amort-table tbody td {
+      font-size: 0.83rem;
+      padding: 10px 14px;
+      border-bottom: 1px solid #f1f5f9;
+      color: var(--gray-700);
+    }
+    .amort-table tbody tr:hover { background: #eff6ff; }
+    .amort-table tbody tr:last-child td { border-bottom: none; }
+    .year-row { background: #eff6ff !important; font-weight: 600; }
+
+    /* ── Comparison ── */
+    .compare-card {
+      background: #fff;
+      border-radius: 20px;
+      border: 2px solid #e5e7eb;
+      padding: 28px;
+      text-align: center;
+      transition: all 0.3s ease;
+      height: 100%;
+    }
+    .compare-card.featured {
+      border-color: var(--primary);
+      box-shadow: 0 12px 40px rgba(26,86,219,0.15);
+      transform: translateY(-8px);
+    }
+    .compare-card .badge-top {
+      display: inline-block;
+      background: var(--primary);
+      color: #fff;
+      font-size: 0.75rem;
+      padding: 4px 14px;
+      border-radius: 20px;
+      margin-bottom: 12px;
+      font-weight: 600;
+    }
+    .compare-emi { font-size: 2rem; font-weight: 800; color: var(--primary); font-family: 'Poppins', sans-serif; }
+    .compare-detail { font-size: 0.82rem; color: var(--gray-500); margin-top: 4px; }
+    .compare-row { display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid #f1f5f9; font-size: 0.84rem; }
+    .compare-row:last-child { border-bottom: none; }
+    .compare-row .key { color: var(--gray-500); }
+    .compare-row .val { font-weight: 600; color: var(--dark); }
+
+    /* ── Formula / Explanation ── */
+    .formula-box {
+      background: linear-gradient(135deg, #0f172a, #1e293b);
+      border-radius: 16px;
+      padding: 28px;
+      font-family: 'Courier New', monospace;
+      color: #a5f3fc;
+      font-size: 1.1rem;
+      text-align: center;
+      border: 1px solid rgba(99,179,237,0.2);
+    }
+    .formula-box .formula-main { font-size: 1.4rem; font-weight: 700; color: #fff; margin-bottom: 10px; }
+    .formula-box .formula-legend { font-size: 0.8rem; color: #94a3b8; margin-top: 12px; font-family: 'Inter', sans-serif; }
+
+    /* ── Tips ── */
+    .tip-card {
+      background: #fff;
+      border-radius: 16px;
+      padding: 24px;
+      border-left: 4px solid var(--accent);
+      box-shadow: 0 4px 16px rgba(0,0,0,0.05);
+      transition: transform 0.3s;
+    }
+    .tip-card:hover { transform: translateY(-4px); }
+    .tip-icon {
+      width: 48px; height: 48px;
+      border-radius: 12px;
+      background: linear-gradient(135deg, #d1fae5, #a7f3d0);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.3rem;
+      margin-bottom: 14px;
+      color: var(--accent);
+    }
+
+    /* ── FAQ ── */
+    .faq-accordion .accordion-button {
+      font-weight: 600;
+      font-size: 0.95rem;
+      color: var(--dark);
+      background: #fff;
+      box-shadow: none;
+    }
+    .faq-accordion .accordion-button:not(.collapsed) {
+      color: var(--primary);
+      background: #eff6ff;
+    }
+    .faq-accordion .accordion-button::after {
+      filter: hue-rotate(220deg);
+    }
+    .faq-accordion .accordion-item {
+      border-radius: 12px !important;
+      margin-bottom: 12px;
+      border: 1px solid #e5e7eb;
+      overflow: hidden;
+    }
+    .faq-accordion .accordion-body {
+      font-size: 0.9rem;
+      color: var(--gray-500);
+      line-height: 1.7;
+    }
+
+    /* ── CTA ── */
+    .cta-section {
+      background: linear-gradient(135deg, #0f172a 0%, #1a56db 100%);
+      position: relative;
+      overflow: hidden;
+    }
+    .cta-section::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse at 70% 50%, rgba(59,130,246,0.3) 0%, transparent 70%);
+    }
+    .btn-primary-custom {
+      background: linear-gradient(135deg, var(--primary), #3b82f6);
+      border: none;
+      border-radius: 50px;
+      padding: 14px 36px;
+      font-weight: 700;
+      font-family: 'Poppins', sans-serif;
+      color: #fff;
+      transition: all 0.3s ease;
+      box-shadow: 0 6px 20px rgba(26,86,219,0.4);
+    }
+    .btn-primary-custom:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 30px rgba(26,86,219,0.5);
+      color: #fff;
+    }
+    .btn-outline-white {
+      border: 2px solid rgba(255,255,255,0.6);
+      color: #fff;
+      border-radius: 50px;
+      padding: 12px 32px;
+      font-weight: 600;
+      transition: all 0.3s;
+    }
+    .btn-outline-white:hover { background: rgba(255,255,255,0.15); color: #fff; }
+
+    /* Navbar overrides */
+    .navbar { padding: 14px 0; transition: all 0.3s; }
+    .navbar.scrolled { box-shadow: 0 4px 20px rgba(0,0,0,0.1); }
+    .nav-link { font-weight: 500; font-size: 0.92rem; }
+    .dropdown-menu { border-radius: 12px; border: none; box-shadow: 0 10px 40px rgba(0,0,0,0.12); }
+
+    /* Responsive */
+    @media (max-width: 767px) {
+      .emi-hero { padding: 100px 0 60px; }
+      .emi-amount { font-size: 2rem; }
+      .calc-left, .calc-right { padding: 24px; }
+      .compare-card.featured { transform: none; }
+    }
+
+    /* Scroll to top */
+    #scrollTop {
+      position: fixed; bottom: 30px; right: 30px;
+      width: 44px; height: 44px;
+      background: var(--primary);
+      color: #fff; border: none;
+      border-radius: 50%;
+      display: none; align-items: center; justify-content: center;
+      font-size: 1.1rem;
+      box-shadow: 0 4px 14px rgba(26,86,219,0.4);
+      z-index: 999; cursor: pointer;
+      transition: all 0.3s;
+    }
+    #scrollTop:hover { background: var(--primary-dark); transform: translateY(-3px); }
+    #scrollTop.visible { display: flex; }
+  </style>
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════════════════
+     NAVBAR
+═══════════════════════════════════════════════════════ -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top" id="mainNav">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center gap-2 fw-800" href="../index.html" style="font-family:'Poppins',sans-serif; font-size:1.3rem; color:#1a56db; text-decoration:none;">
+      <span style="background:linear-gradient(135deg,#1a56db,#10b981); width:36px; height:36px; border-radius:10px; display:flex; align-items:center; justify-content:center;">
+        <i class="fa-solid fa-indian-rupee-sign text-white" style="font-size:1rem;"></i>
+      </span>
+      Easy Loan<span style="color:#10b981;">Services</span>
+    </a>
+    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+        <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Loans</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="home-loan.html"><i class="fa-solid fa-house text-primary me-2"></i>Home Loan</a></li>
+            <li><a class="dropdown-item" href="personal-loan.html"><i class="fa-solid fa-user text-primary me-2"></i>Personal Loan</a></li>
+            <li><a class="dropdown-item" href="car-loan.html"><i class="fa-solid fa-car text-primary me-2"></i>Car Loan</a></li>
+            <li><a class="dropdown-item" href="business-loan.html"><i class="fa-solid fa-briefcase text-primary me-2"></i>Business Loan</a></li>
+            <li><a class="dropdown-item" href="education-loan.html"><i class="fa-solid fa-graduation-cap text-primary me-2"></i>Education Loan</a></li>
+            <li><a class="dropdown-item" href="gold-loan.html"><i class="fa-solid fa-coins text-primary me-2"></i>Gold Loan</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link active" href="emi-calculator.html">EMI Calc</a></li>
+        <li class="nav-item"><a class="nav-link" href="eligibility.html">Eligibility</a></li>
+        <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+        <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        <li class="nav-item ms-lg-2">
+          <a class="btn btn-primary-custom btn-sm px-4" href="apply.html">Apply Now <i class="fa-solid fa-arrow-right ms-1"></i></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- ═══════════════════════════════════════════════════════
+     HERO SECTION
+═══════════════════════════════════════════════════════ -->
+<section class="emi-hero">
+  <div class="container position-relative">
+    <div class="row align-items-center">
+      <div class="col-lg-7" data-aos="fade-right">
+        <div class="hero-badge"><i class="fa-solid fa-calculator"></i> Free Online Tool — No Login Required</div>
+        <h1 class="fw-800 text-white mb-3" style="font-size:clamp(2rem,5vw,3.2rem); line-height:1.15;">
+          EMI Calculator —<br><span style="color:#6ee7b7;">Plan Your Loan</span> Repayment
+        </h1>
+        <p class="text-white mb-4" style="opacity:0.85; font-size:1.05rem; max-width:520px;">
+          Instantly calculate your monthly EMI for any loan amount, interest rate, and tenure. Get a full amortization schedule and compare multiple loan scenarios side by side.
+        </p>
+        <div class="d-flex flex-wrap gap-3 mb-5">
+          <div class="hero-stat">
+            <div class="stat-val">₹50K — 1Cr</div>
+            <div class="stat-lbl">Loan Range</div>
+          </div>
+          <div class="hero-stat">
+            <div class="stat-val">5% — 30%</div>
+            <div class="stat-lbl">Interest Rates</div>
+          </div>
+          <div class="hero-stat">
+            <div class="stat-val">1 — 30 Yrs</div>
+            <div class="stat-lbl">Tenure Options</div>
+          </div>
+          <div class="hero-stat">
+            <div class="stat-val">100%</div>
+            <div class="stat-lbl">Accurate & Free</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-5 d-none d-lg-block text-center" data-aos="fade-left">
+        <img src="https://images.unsplash.com/photo-1579621970795-87facc2f976d?w=520&q=80" alt="EMI Calculator Planning" class="img-fluid" style="border-radius:24px; box-shadow:0 20px 60px rgba(0,0,0,0.3);" loading="lazy" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════
+     MAIN CALCULATOR SECTION
+═══════════════════════════════════════════════════════ -->
+<section class="py-5 bg-white" id="calculator">
+  <div class="container">
+    <div class="text-center mb-5" data-aos="fade-up">
+      <span class="badge bg-primary bg-opacity-10 text-primary fw-600 px-3 py-2 rounded-pill mb-3" style="font-family:'Poppins',sans-serif;">EMI Calculator</span>
+      <h2 class="fw-700" style="font-size:2rem;">Calculate Your Monthly Instalments</h2>
+      <p class="text-muted mx-auto" style="max-width:560px;">Adjust the sliders below to instantly see your EMI, total interest payable, and repayment breakdown.</p>
+    </div>
+
+    <div class="calc-card" data-aos="fade-up" data-aos-delay="100">
+      <div class="row g-0">
+        <!-- Left: Sliders -->
+        <div class="col-lg-6 calc-left">
+          <h5 class="fw-700 mb-4" style="font-family:'Poppins',sans-serif; color:var(--dark);">
+            <i class="fa-solid fa-sliders text-primary me-2"></i>Loan Parameters
+          </h5>
+
+          <!-- Loan Amount -->
+          <div class="slider-group">
+            <label>
+              Loan Amount
+              <span class="slider-value-badge" id="loanAmountLabel">₹10,00,000</span>
+            </label>
+            <input type="range" id="loanAmount" min="50000" max="10000000" step="50000" value="1000000" />
+            <div class="slider-minmax"><span>₹50,000</span><span>₹1 Crore</span></div>
+          </div>
+
+          <!-- Interest Rate -->
+          <div class="slider-group">
+            <label>
+              Annual Interest Rate
+              <span class="slider-value-badge" id="interestRateLabel">8.5%</span>
+            </label>
+            <input type="range" id="interestRate" min="5" max="30" step="0.1" value="8.5" />
+            <div class="slider-minmax"><span>5%</span><span>30%</span></div>
+          </div>
+
+          <!-- Tenure -->
+          <div class="slider-group">
+            <label>
+              Loan Tenure
+              <span class="slider-value-badge" id="tenureLabel">20 Years</span>
+            </label>
+            <input type="range" id="tenure" min="1" max="30" step="1" value="20" />
+            <div class="slider-minmax"><span>1 Year</span><span>30 Years</span></div>
+          </div>
+
+          <!-- Manual Input Row -->
+          <div class="row g-2 mt-3">
+            <div class="col-4">
+              <label class="form-label fw-600" style="font-size:0.8rem; color:var(--gray-700);">Amount (₹)</label>
+              <input type="number" id="loanAmountInput" class="form-control form-control-sm" value="1000000" min="50000" max="10000000" step="50000" style="font-size:0.85rem;" />
+            </div>
+            <div class="col-4">
+              <label class="form-label fw-600" style="font-size:0.8rem; color:var(--gray-700);">Rate (%)</label>
+              <input type="number" id="interestRateInput" class="form-control form-control-sm" value="8.5" min="5" max="30" step="0.1" style="font-size:0.85rem;" />
+            </div>
+            <div class="col-4">
+              <label class="form-label fw-600" style="font-size:0.8rem; color:var(--gray-700);">Tenure (Yr)</label>
+              <input type="number" id="tenureInput" class="form-control form-control-sm" value="20" min="1" max="30" step="1" style="font-size:0.85rem;" />
+            </div>
+          </div>
+
+          <!-- Breakdown Bars -->
+          <div class="mt-4 pt-3 border-top">
+            <h6 class="fw-700 mb-3" style="font-size:0.9rem;">Repayment Breakdown</h6>
+            <div class="mb-3">
+              <div class="d-flex justify-content-between mb-1" style="font-size:0.82rem;">
+                <span class="text-muted">Principal Amount</span>
+                <span class="fw-700 text-primary" id="principalDisplay">₹10,00,000</span>
+              </div>
+              <div class="split-bar-wrap">
+                <div class="split-bar-fill" id="principalBar" style="width:45%; background:var(--primary);"></div>
+              </div>
+            </div>
+            <div>
+              <div class="d-flex justify-content-between mb-1" style="font-size:0.82rem;">
+                <span class="text-muted">Total Interest Payable</span>
+                <span class="fw-700 text-danger" id="interestDisplay">₹10,22,197</span>
+              </div>
+              <div class="split-bar-wrap">
+                <div class="split-bar-fill" id="interestBar" style="width:55%; background:#ef4444;"></div>
+              </div>
+            </div>
+            <div class="d-flex justify-content-between mt-3 pt-2 border-top">
+              <span class="fw-700" style="font-size:0.9rem;">Total Amount Payable</span>
+              <span class="fw-800 text-dark" style="font-size:1rem;" id="totalDisplay">₹20,22,197</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Result -->
+        <div class="col-lg-6 calc-right d-flex flex-column gap-4">
+          <!-- EMI Result Card -->
+          <div class="result-panel">
+            <div class="text-white-50 fw-500 mb-1" style="font-size:0.85rem; letter-spacing:0.05em; text-transform:uppercase;">Monthly EMI</div>
+            <div class="emi-amount" id="emiResult">
+              <span class="currency">₹</span><span id="emiValue">8,426</span>
+            </div>
+            <div class="text-white-50 fw-500 mt-1" style="font-size:0.82rem;">per month for 240 months</div>
+            <hr style="border-color:rgba(255,255,255,0.2); margin:16px 0;" />
+            <div class="row g-2">
+              <div class="col-4">
+                <div class="emi-detail-item">Principal</div>
+                <div class="emi-detail-val" id="resultPrincipal">₹10.0L</div>
+              </div>
+              <div class="col-4">
+                <div class="emi-detail-item">Interest</div>
+                <div class="emi-detail-val" id="resultInterest">₹10.2L</div>
+              </div>
+              <div class="col-4">
+                <div class="emi-detail-item">Total Pay</div>
+                <div class="emi-detail-val" id="resultTotal">₹20.2L</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Donut Chart -->
+          <div class="text-center">
+            <h6 class="fw-700 mb-3" style="font-size:0.9rem;">Principal vs. Interest Split</h6>
+            <canvas id="emiDonut" width="200" height="200"></canvas>
+            <div class="d-flex justify-content-center gap-4 mt-3">
+              <div class="d-flex align-items-center gap-2">
+                <span class="chart-legend-dot" style="background:var(--primary);"></span>
+                <span style="font-size:0.82rem;">Principal (<span id="principalPct">49%</span>)</span>
+              </div>
+              <div class="d-flex align-items-center gap-2">
+                <span class="chart-legend-dot" style="background:#ef4444;"></span>
+                <span style="font-size:0.82rem;">Interest (<span id="interestPct">51%</span>)</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Quick Actions -->
+          <div class="d-flex gap-2 mt-auto">
+            <button class="btn btn-primary-custom flex-fill" onclick="document.getElementById('amortizationSection').scrollIntoView({behavior:'smooth'})">
+              <i class="fa-solid fa-table me-2"></i>View Schedule
+            </button>
+            <button class="btn btn-outline-secondary flex-fill" onclick="resetCalculator()">
+              <i class="fa-solid fa-rotate-left me-2"></i>Reset
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════
+     AMORTIZATION TABLE SECTION
+═══════════════════════════════════════════════════════ -->
+<section class="py-5 amort-section" id="amortizationSection">
+  <div class="container">
+    <div class="text-center mb-5" data-aos="fade-up">
+      <span class="badge bg-primary bg-opacity-10 text-primary fw-600 px-3 py-2 rounded-pill mb-3" style="font-family:'Poppins',sans-serif;">Amortization Schedule</span>
+      <h2 class="fw-700" style="font-size:2rem;">Month-by-Month Repayment Schedule</h2>
+      <p class="text-muted mx-auto" style="max-width:560px;">See exactly how much of each EMI goes towards principal and interest, and track your outstanding balance over time.</p>
+    </div>
+
+    <div class="bg-white rounded-4 p-4 shadow-sm" data-aos="fade-up" data-aos-delay="100">
+      <!-- Controls -->
+      <div class="d-flex flex-wrap align-items-center justify-content-between gap-3 mb-4">
+        <div class="d-flex align-items-center gap-3">
+          <div>
+            <label class="form-label fw-600 mb-1" style="font-size:0.82rem;">View By</label>
+            <select class="form-select form-select-sm" id="amortView" style="min-width:130px;">
+              <option value="monthly">Monthly</option>
+              <option value="yearly">Yearly Summary</option>
+            </select>
+          </div>
+          <div>
+            <label class="form-label fw-600 mb-1" style="font-size:0.82rem;">Start Date</label>
+            <input type="month" class="form-control form-control-sm" id="startDate" value="2026-08" style="min-width:150px;" />
+          </div>
+        </div>
+        <div class="d-flex gap-2">
+          <button class="btn btn-primary-custom" id="generateAmortization">
+            <i class="fa-solid fa-calendar-days me-2"></i>Generate Schedule
+          </button>
+          <button class="btn btn-outline-secondary btn-sm" id="downloadCsv" style="display:none;">
+            <i class="fa-solid fa-download me-2"></i>CSV
+          </button>
+        </div>
+      </div>
+
+      <!-- Summary Row -->
+      <div class="row g-3 mb-4" id="amortSummary" style="display:none !important;">
+        <div class="col-6 col-md-3">
+          <div class="p-3 rounded-3 text-center" style="background:#eff6ff;">
+            <div class="fw-800 text-primary" style="font-size:1.2rem; font-family:'Poppins',sans-serif;" id="summPrincipal">—</div>
+            <div class="text-muted" style="font-size:0.78rem;">Total Principal</div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="p-3 rounded-3 text-center" style="background:#fef2f2;">
+            <div class="fw-800 text-danger" style="font-size:1.2rem; font-family:'Poppins',sans-serif;" id="summInterest">—</div>
+            <div class="text-muted" style="font-size:0.78rem;">Total Interest</div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="p-3 rounded-3 text-center" style="background:#f0fdf4;">
+            <div class="fw-800 text-success" style="font-size:1.2rem; font-family:'Poppins',sans-serif;" id="summTotal">—</div>
+            <div class="text-muted" style="font-size:0.78rem;">Total Amount Paid</div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="p-3 rounded-3 text-center" style="background:#fdf4ff;">
+            <div class="fw-800" style="font-size:1.2rem; font-family:'Poppins',sans-serif; color:#7c3aed;" id="summMonths">—</div>
+            <div class="text-muted" style="font-size:0.78rem;">Total Months</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Table -->
+      <div class="table-scroll" id="amortTableContainer" style="display:none;">
+        <table class="table amort-table mb-0">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Date</th>
+              <th>EMI (₹)</th>
+              <th>Principal (₹)</th>
+              <th>Interest (₹)</th>
+              <th>Balance (₹)</th>
+            </tr>
+          </thead>
+          <tbody id="amortizationBody"></tbody>
+        </table>
+      </div>
+
+      <!-- Placeholder -->
+      <div id="amortPlaceholder" class="text-center py-5">
+        <i class="fa-solid fa-table-list text-primary mb-3" style="font-size:3rem; opacity:0.3;"></i>
+        <p class="text-muted">Click <strong>Generate Schedule</strong> to view your month-by-month repayment plan.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════
+     LOAN COMPARISON SECTION
+═══════════════════════════════════════════════════════ -->
+<section class="py-5 bg-white">
+  <div class="container">
+    <div class="text-center mb-5" data-aos="fade-up">
+      <span class="badge bg-primary bg-opacity-10 text-primary fw-600 px-3 py-2 rounded-pill mb-3" style="font-family:'Poppins',sans-serif;">Loan Comparison</span>
+      <h2 class="fw-700" style="font-size:2rem;">Compare Three Loan Scenarios</h2>
+      <p class="text-muted mx-auto" style="max-width:560px;">See how different loan amounts, rates, and tenures affect your EMI and total repayment in real time.</p>
+    </div>
+
+    <div class="row g-4" id="comparisonSection">
+      <!-- Scenario A -->
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="50">
+        <div class="compare-card h-100">
+          <div class="text-muted fw-600 mb-3" style="font-size:0.82rem; text-transform:uppercase; letter-spacing:0.05em;">Scenario A — Low Rate</div>
+          <div class="compare-emi" id="compEmiA">₹8,426</div>
+          <div class="compare-detail">per month</div>
+          <hr />
+          <div class="compare-row"><span class="key">Loan Amount</span><span class="val">₹10,00,000</span></div>
+          <div class="compare-row"><span class="key">Interest Rate</span><span class="val">8.5% p.a.</span></div>
+          <div class="compare-row"><span class="key">Tenure</span><span class="val">20 Years</span></div>
+          <div class="compare-row"><span class="key">Total Interest</span><span class="val text-danger" id="compIntA">₹10,22,197</span></div>
+          <div class="compare-row"><span class="key">Total Payable</span><span class="val" id="compTotalA">₹20,22,197</span></div>
+        </div>
+      </div>
+      <!-- Scenario B (featured) -->
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="compare-card featured h-100">
+          <span class="badge-top">Your Current Inputs</span>
+          <div class="compare-emi" id="compEmiB">₹8,426</div>
+          <div class="compare-detail">per month</div>
+          <hr />
+          <div class="compare-row"><span class="key">Loan Amount</span><span class="val" id="compAmtB">₹10,00,000</span></div>
+          <div class="compare-row"><span class="key">Interest Rate</span><span class="val" id="compRateB">8.5% p.a.</span></div>
+          <div class="compare-row"><span class="key">Tenure</span><span class="val" id="compTenB">20 Years</span></div>
+          <div class="compare-row"><span class="key">Total Interest</span><span class="val text-danger" id="compIntB">₹10,22,197</span></div>
+          <div class="compare-row"><span class="key">Total Payable</span><span class="val" id="compTotalB">₹20,22,197</span></div>
+        </div>
+      </div>
+      <!-- Scenario C -->
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="150">
+        <div class="compare-card h-100">
+          <div class="text-muted fw-600 mb-3" style="font-size:0.82rem; text-transform:uppercase; letter-spacing:0.05em;">Scenario C — High Rate</div>
+          <div class="compare-emi" id="compEmiC">₹12,001</div>
+          <div class="compare-detail">per month</div>
+          <hr />
+          <div class="compare-row"><span class="key">Loan Amount</span><span class="val">₹10,00,000</span></div>
+          <div class="compare-row"><span class="key">Interest Rate</span><span class="val">14% p.a.</span></div>
+          <div class="compare-row"><span class="key">Tenure</span><span class="val">20 Years</span></div>
+          <div class="compare-row"><span class="key">Total Interest</span><span class="val text-danger" id="compIntC">₹18,80,240</span></div>
+          <div class="compare-row"><span class="key">Total Payable</span><span class="val" id="compTotalC">₹28,80,240</span></div>
+        </div>
+      </div>
+    </div>
+
+    <p class="text-center text-muted mt-4" style="font-size:0.82rem;">* Scenario A uses 7% interest rate. Scenario C uses 14% interest rate. Scenario B mirrors your current calculator inputs.</p>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════
+     HOW EMI IS CALCULATED
+═══════════════════════════════════════════════════════ -->
+<section class="py-5" style="background:var(--gray-100);">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-6" data-aos="fade-right">
+        <span class="badge bg-primary bg-opacity-10 text-primary fw-600 px-3 py-2 rounded-pill mb-3" style="font-family:'Poppins',sans-serif;">The Formula</span>
+        <h2 class="fw-700 mb-4" style="font-size:2rem;">How is EMI Calculated?</h2>
+        <p class="text-muted mb-4">EMI (Equated Monthly Instalment) is calculated using the standard reducing-balance formula used by all RBI-regulated banks and NBFCs across India.</p>
+
+        <div class="formula-box mb-4">
+          <div class="formula-main">EMI = [P × r × (1+r)<sup>n</sup>] / [(1+r)<sup>n</sup> – 1]</div>
+          <div class="formula-legend">
+            P = Principal Loan Amount &nbsp;|&nbsp; r = Monthly Interest Rate (Annual Rate ÷ 12 ÷ 100) &nbsp;|&nbsp; n = Loan Tenure in Months
+          </div>
+        </div>
+
+        <div class="row g-3">
+          <div class="col-sm-6">
+            <div class="d-flex gap-3 align-items-start">
+              <div style="width:36px; height:36px; border-radius:8px; background:linear-gradient(135deg,#dbeafe,#bfdbfe); display:flex; align-items:center; justify-content:center; flex-shrink:0;">
+                <i class="fa-solid fa-p text-primary" style="font-size:0.9rem;"></i>
+              </div>
+              <div>
+                <div class="fw-700" style="font-size:0.9rem;">Principal (P)</div>
+                <div class="text-muted" style="font-size:0.82rem;">The original loan amount borrowed from the lender.</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="d-flex gap-3 align-items-start">
+              <div style="width:36px; height:36px; border-radius:8px; background:linear-gradient(135deg,#d1fae5,#a7f3d0); display:flex; align-items:center; justify-content:center; flex-shrink:0;">
+                <i class="fa-solid fa-r text-success" style="font-size:0.9rem;"></i>
+              </div>
+              <div>
+                <div class="fw-700" style="font-size:0.9rem;">Rate (r)</div>
+                <div class="text-muted" style="font-size:0.82rem;">Monthly rate = Annual interest rate divided by 12 and 100.</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="d-flex gap-3 align-items-start">
+              <div style="width:36px; height:36px; border-radius:8px; background:linear-gradient(135deg,#fce7f3,#fbcfe8); display:flex; align-items:center; justify-content:center; flex-shrink:0;">
+                <i class="fa-solid fa-n text-danger" style="font-size:0.9rem;"></i>
+              </div>
+              <div>
+                <div class="fw-700" style="font-size:0.9rem;">Tenure (n)</div>
+                <div class="text-muted" style="font-size:0.82rem;">Total number of monthly instalments (years × 12).</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="d-flex gap-3 align-items-start">
+              <div style="width:36px; height:36px; border-radius:8px; background:linear-gradient(135deg,#fef3c7,#fde68a); display:flex; align-items:center; justify-content:center; flex-shrink:0;">
+                <i class="fa-solid fa-equals" style="font-size:0.9rem; color:#d97706;"></i>
+              </div>
+              <div>
+                <div class="fw-700" style="font-size:0.9rem;">EMI</div>
+                <div class="text-muted" style="font-size:0.82rem;">Fixed monthly payment covering principal + interest.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6" data-aos="fade-left">
+        <h5 class="fw-700 mb-4" style="font-family:'Poppins',sans-serif;">Worked Example</h5>
+        <div class="bg-white rounded-4 p-4 shadow-sm">
+          <div class="table-responsive">
+            <table class="table table-borderless mb-0" style="font-size:0.88rem;">
+              <thead>
+                <tr style="border-bottom:2px solid #f1f5f9;">
+                  <th class="fw-700 text-muted ps-0">Parameter</th>
+                  <th class="fw-700 text-muted">Value</th>
+                  <th class="fw-700 text-muted">In Formula</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="ps-0 text-muted">Loan Amount</td>
+                  <td class="fw-600">₹10,00,000</td>
+                  <td><code>P = 10,00,000</code></td>
+                </tr>
+                <tr>
+                  <td class="ps-0 text-muted">Annual Rate</td>
+                  <td class="fw-600">8.5% p.a.</td>
+                  <td><code>r = 8.5/12/100</code></td>
+                </tr>
+                <tr>
+                  <td class="ps-0 text-muted">Tenure</td>
+                  <td class="fw-600">20 Years</td>
+                  <td><code>n = 240</code></td>
+                </tr>
+                <tr style="border-top:2px solid #f1f5f9;">
+                  <td class="ps-0 fw-700">Monthly EMI</td>
+                  <td class="fw-800 text-primary fs-6">₹8,678</td>
+                  <td><span class="badge bg-success text-white">Calculated</span></td>
+                </tr>
+                <tr>
+                  <td class="ps-0 text-muted">Total Interest</td>
+                  <td class="fw-600 text-danger">₹10,82,720</td>
+                  <td><span class="text-muted">EMI × n – P</span></td>
+                </tr>
+                <tr>
+                  <td class="ps-0 text-muted">Total Payable</td>
+                  <td class="fw-600">₹20,82,720</td>
+                  <td><span class="text-muted">P + Total Interest</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="alert alert-info mt-3 mb-0 rounded-3" style="font-size:0.82rem; border:none; background:#eff6ff; color:var(--primary);">
+            <i class="fa-solid fa-circle-info me-2"></i>
+            <strong>Note:</strong> In the first month, most of your EMI pays interest. Over time, the principal component increases — this is called a <em>reducing balance</em> loan.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════
+     TIPS TO REDUCE EMI
+═══════════════════════════════════════════════════════ -->
+<section class="py-5 bg-white">
+  <div class="container">
+    <div class="text-center mb-5" data-aos="fade-up">
+      <span class="badge bg-success bg-opacity-10 text-success fw-600 px-3 py-2 rounded-pill mb-3" style="font-family:'Poppins',sans-serif;">Smart Strategies</span>
+      <h2 class="fw-700" style="font-size:2rem;">6 Ways to Reduce Your EMI Burden</h2>
+      <p class="text-muted mx-auto" style="max-width:560px;">Smart borrowers use these proven strategies to lower their monthly outflow and save lakhs on total interest payable.</p>
+    </div>
+    <div class="row g-4">
+      <!-- Tip 1 -->
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="50">
+        <div class="tip-card">
+          <div class="tip-icon"><i class="fa-solid fa-hand-holding-dollar"></i></div>
+          <h6 class="fw-700 mb-2">Increase Your Down Payment</h6>
+          <p class="text-muted mb-0" style="font-size:0.88rem;">A larger down payment reduces the principal amount. Even a 10% extra down payment can slash your EMI significantly and cut total interest by 15–25%.</p>
+        </div>
+      </div>
+      <!-- Tip 2 -->
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="tip-card">
+          <div class="tip-icon"><i class="fa-solid fa-calendar-minus"></i></div>
+          <h6 class="fw-700 mb-2">Opt for Shorter Tenure Wisely</h6>
+          <p class="text-muted mb-0" style="font-size:0.88rem;">Though a shorter tenure means higher EMI, you pay much less total interest. Evaluate your monthly surplus and choose the shortest tenure you can comfortably afford.</p>
+        </div>
+      </div>
+      <!-- Tip 3 -->
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="150">
+        <div class="tip-card">
+          <div class="tip-icon"><i class="fa-solid fa-arrow-trend-down"></i></div>
+          <h6 class="fw-700 mb-2">Negotiate a Lower Interest Rate</h6>
+          <p class="text-muted mb-0" style="font-size:0.88rem;">A good CIBIL score (750+) gives you negotiating power. Compare lenders, use balance transfer options, and don't hesitate to ask for rate reduction after 12 on-time payments.</p>
+        </div>
+      </div>
+      <!-- Tip 4 -->
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="tip-card">
+          <div class="tip-icon"><i class="fa-solid fa-money-bill-wave"></i></div>
+          <h6 class="fw-700 mb-2">Make Part-Prepayments</h6>
+          <p class="text-muted mb-0" style="font-size:0.88rem;">Whenever you receive a bonus or windfall, prepay a lump sum towards your principal. This reduces your outstanding balance, cutting future interest and tenure significantly.</p>
+        </div>
+      </div>
+      <!-- Tip 5 -->
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="250">
+        <div class="tip-card">
+          <div class="tip-icon"><i class="fa-solid fa-balance-scale"></i></div>
+          <h6 class="fw-700 mb-2">Consider Loan Balance Transfer</h6>
+          <p class="text-muted mb-0" style="font-size:0.88rem;">If market rates have fallen since you took the loan, transfer your outstanding balance to a lender offering a lower rate. Even a 0.5% reduction saves you thousands over the remaining tenure.</p>
+        </div>
+      </div>
+      <!-- Tip 6 -->
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+        <div class="tip-card">
+          <div class="tip-icon"><i class="fa-solid fa-chart-line"></i></div>
+          <h6 class="fw-700 mb-2">Improve Your Credit Score</h6>
+          <p class="text-muted mb-0" style="font-size:0.88rem;">A CIBIL score above 750 unlocks the lowest interest rates. Pay all credit card dues on time, reduce existing debt, and avoid multiple loan applications within a short period.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════
+     FAQ SECTION
+═══════════════════════════════════════════════════════ -->
+<section class="py-5" style="background:var(--gray-100);">
+  <div class="container">
+    <div class="row g-5 align-items-start">
+      <div class="col-lg-4" data-aos="fade-right">
+        <span class="badge bg-primary bg-opacity-10 text-primary fw-600 px-3 py-2 rounded-pill mb-3" style="font-family:'Poppins',sans-serif;">FAQ</span>
+        <h2 class="fw-700 mb-3" style="font-size:2rem;">Frequently Asked Questions</h2>
+        <p class="text-muted mb-4">Have questions about EMI? We've answered the most common ones below. Still confused? Our loan experts are just a call away.</p>
+        <a href="contact.html" class="btn btn-primary-custom">
+          <i class="fa-solid fa-headset me-2"></i>Talk to an Expert
+        </a>
+      </div>
+      <div class="col-lg-8" data-aos="fade-left">
+        <div class="accordion faq-accordion" id="emiFaq">
+          <!-- Q1 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                What is EMI and how does it work?
+              </button>
+            </h2>
+            <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#emiFaq">
+              <div class="accordion-body">
+                EMI stands for <strong>Equated Monthly Instalment</strong>. It is a fixed payment amount made by a borrower to a lender on a specified date each month. EMIs are used to pay off both interest and principal every month so that over a specified tenure, the loan is fully paid off. In the initial months, the interest component is higher, while in the later months, more goes toward principal repayment — this is called a reducing-balance or amortizing loan.
+              </div>
+            </div>
+          </div>
+          <!-- Q2 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                Does prepayment reduce EMI or tenure?
+              </button>
+            </h2>
+            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#emiFaq">
+              <div class="accordion-body">
+                This depends on your lender's policy and your preference. Most lenders give you two options when you make a partial prepayment: <strong>(1) Reduce your EMI amount</strong> while keeping the tenure the same, or <strong>(2) Reduce the tenure</strong> while keeping the EMI the same. Financial advisors generally recommend reducing tenure, as it saves more total interest over the life of the loan.
+              </div>
+            </div>
+          </div>
+          <!-- Q3 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                What happens if I miss an EMI payment?
+              </button>
+            </h2>
+            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#emiFaq">
+              <div class="accordion-body">
+                Missing an EMI payment has several consequences. First, lenders charge a <strong>late payment penalty</strong> (typically 1–2% per month on overdue amount). Second, missed payments are reported to credit bureaus (CIBIL), which can significantly <strong>lower your credit score</strong>. Multiple missed payments can lead to loan default, legal action, and asset seizure in the case of secured loans. It's best to inform your lender in advance if you foresee difficulty.
+              </div>
+            </div>
+          </div>
+          <!-- Q4 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                What percentage of income should go towards EMI?
+              </button>
+            </h2>
+            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#emiFaq">
+              <div class="accordion-body">
+                The industry thumb rule is the <strong>40% rule</strong> — your total EMI obligations (across all loans) should not exceed 40–50% of your net take-home monthly income. Most banks use a <strong>FOIR (Fixed Obligation to Income Ratio)</strong> of 40–55%. Keeping your EMI-to-income ratio below 40% gives you a comfortable financial buffer and makes you eligible for better loan terms.
+              </div>
+            </div>
+          </div>
+          <!-- Q5 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5">
+                Is there a difference between flat rate and reducing rate EMI?
+              </button>
+            </h2>
+            <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#emiFaq">
+              <div class="accordion-body">
+                Yes — a significant one. With a <strong>flat interest rate</strong>, interest is calculated on the entire principal throughout the tenure, resulting in a higher effective interest cost. With a <strong>reducing balance rate</strong> (used by most banks), interest is calculated on the outstanding principal each month, decreasing over time. A flat rate of 10% is roughly equivalent to a reducing balance rate of 18–20%. Our calculator uses the reducing-balance method, which is the industry standard for all bank loans in India.
+              </div>
+            </div>
+          </div>
+          <!-- Q6 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq6">
+                Can I change my EMI amount after taking the loan?
+              </button>
+            </h2>
+            <div id="faq6" class="accordion-collapse collapse" data-bs-parent="#emiFaq">
+              <div class="accordion-body">
+                In most cases, the EMI is fixed for the loan tenure. However, there are scenarios where it can change: <strong>(1)</strong> If you have a floating-rate loan, the EMI may change when RBI revises repo rates. <strong>(2)</strong> You can negotiate an EMI step-up/step-down plan with certain lenders. <strong>(3)</strong> Making a part-prepayment allows you to reset your EMI (downward) or reduce tenure. <strong>(4)</strong> Loan restructuring under financial hardship may allow EMI revision. Always check with your lender for their specific policies.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════
+     CTA APPLY SECTION
+═══════════════════════════════════════════════════════ -->
+<section class="cta-section py-5">
+  <div class="container position-relative py-3">
+    <div class="row justify-content-center text-center" data-aos="zoom-in">
+      <div class="col-lg-8">
+        <span class="badge mb-3 px-3 py-2 rounded-pill" style="background:rgba(255,255,255,0.15); color:#fff; font-size:0.82rem; font-family:'Poppins',sans-serif;">Ready to Apply?</span>
+        <h2 class="text-white fw-800 mb-3" style="font-size:clamp(1.8rem,4vw,2.8rem); font-family:'Poppins',sans-serif;">
+          Your Dream Loan is Just a Few Clicks Away
+        </h2>
+        <p class="text-white mb-5" style="opacity:0.85; font-size:1.05rem; max-width:580px; margin:0 auto 2rem;">
+          You've done the maths — now take the next step. Apply online in under 5 minutes. Get instant approval in principle, competitive interest rates, and dedicated support.
+        </p>
+        <div class="d-flex flex-wrap justify-content-center gap-3">
+          <a href="apply.html" class="btn btn-light fw-700 px-5 py-3 rounded-pill" style="font-family:'Poppins',sans-serif; color:var(--primary); font-size:1rem;">
+            <i class="fa-solid fa-paper-plane me-2"></i>Apply for Loan Now
+          </a>
+          <a href="contact.html" class="btn btn-outline-white px-5 py-3">
+            <i class="fa-solid fa-phone me-2"></i>Speak to an Advisor
+          </a>
+        </div>
+        <div class="d-flex flex-wrap justify-content-center gap-4 mt-5">
+          <div class="text-white text-center">
+            <i class="fa-solid fa-shield-halved fa-2x mb-2" style="opacity:0.75;"></i>
+            <div style="font-size:0.8rem; opacity:0.75;">100% Secure</div>
+          </div>
+          <div class="text-white text-center">
+            <i class="fa-solid fa-bolt fa-2x mb-2" style="opacity:0.75;"></i>
+            <div style="font-size:0.8rem; opacity:0.75;">Instant Decision</div>
+          </div>
+          <div class="text-white text-center">
+            <i class="fa-solid fa-file-circle-check fa-2x mb-2" style="opacity:0.75;"></i>
+            <div style="font-size:0.8rem; opacity:0.75;">Minimal Documents</div>
+          </div>
+          <div class="text-white text-center">
+            <i class="fa-solid fa-percent fa-2x mb-2" style="opacity:0.75;"></i>
+            <div style="font-size:0.8rem; opacity:0.75;">Best Rates</div>
+          </div>
+          <div class="text-white text-center">
+            <i class="fa-solid fa-headset fa-2x mb-2" style="opacity:0.75;"></i>
+            <div style="font-size:0.8rem; opacity:0.75;">24/7 Support</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════
+     FOOTER
+═══════════════════════════════════════════════════════ -->
+<footer style="background:#0f172a; color:#94a3b8;">
+  <div class="container py-5">
+    <div class="row g-4">
+      <!-- Brand -->
+      <div class="col-lg-4 col-md-6">
+        <a class="d-flex align-items-center gap-2 text-decoration-none mb-3" href="../index.html">
+          <span style="background:linear-gradient(135deg,#1a56db,#10b981); width:36px; height:36px; border-radius:10px; display:flex; align-items:center; justify-content:center;">
+            <i class="fa-solid fa-indian-rupee-sign text-white" style="font-size:1rem;"></i>
+          </span>
+          <span style="font-family:'Poppins',sans-serif; font-size:1.2rem; font-weight:700; color:#fff;">Easy Loan <span style="color:#10b981;">Services</span></span>
+        </a>
+        <p style="font-size:0.88rem; line-height:1.7; max-width:300px;">Your trusted financial partner for home, personal, car, and business loans. NBFC registered &amp; RBI compliant.</p>
+        <div class="d-flex gap-3 mt-3">
+          <a href="#" class="text-secondary" style="font-size:1.1rem; transition:color 0.2s;" onmouseover="this.style.color='#1a56db'" onmouseout="this.style.color=''"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="text-secondary" style="font-size:1.1rem; transition:color 0.2s;" onmouseover="this.style.color='#1d9bf0'" onmouseout="this.style.color=''"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="text-secondary" style="font-size:1.1rem; transition:color 0.2s;" onmouseover="this.style.color='#0077b5'" onmouseout="this.style.color=''"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" class="text-secondary" style="font-size:1.1rem; transition:color 0.2s;" onmouseover="this.style.color='#e4405f'" onmouseout="this.style.color=''"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="text-secondary" style="font-size:1.1rem; transition:color 0.2s;" onmouseover="this.style.color='#ff0000'" onmouseout="this.style.color=''"><i class="fab fa-youtube"></i></a>
+        </div>
+        <div class="mt-3" style="font-size:0.8rem;">
+          <span class="badge me-1" style="background:rgba(16,185,129,0.15); color:#10b981;">NBFC Registered</span>
+          <span class="badge" style="background:rgba(26,86,219,0.15); color:#93c5fd;">RBI Compliant</span>
+        </div>
+      </div>
+
+      <!-- Loan Products -->
+      <div class="col-lg-2 col-md-6 col-6">
+        <h6 class="fw-700 text-white mb-3" style="font-size:0.95rem; font-family:'Poppins',sans-serif;">Loan Products</h6>
+        <ul class="list-unstyled" style="font-size:0.88rem;">
+          <li class="mb-2"><a href="home-loan.html" class="text-secondary text-decoration-none" style="transition:color 0.2s;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color=''">Home Loan</a></li>
+          <li class="mb-2"><a href="personal-loan.html" class="text-secondary text-decoration-none" style="transition:color 0.2s;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color=''">Personal Loan</a></li>
+          <li class="mb-2"><a href="car-loan.html" class="text-secondary text-decoration-none" style="transition:color 0.2s;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color=''">Car Loan</a></li>
+          <li class="mb-2"><a href="business-loan.html" class="text-secondary text-decoration-none" style="transition:color 0.2s;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color=''">Business Loan</a></li>
+          <li class="mb-2"><a href="education-loan.html" class="text-secondary text-decoration-none" style="transition:color 0.2s;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color=''">Education Loan</a></li>
+          <li class="mb-2"><a href="gold-loan.html" class="text-secondary text-decoration-none" style="transition:color 0.2s;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color=''">Gold Loan</a></li>
+        </ul>
+      </div>
+
+      <!-- Tools & Resources -->
+      <div class="col-lg-2 col-md-6 col-6">
+        <h6 class="fw-700 text-white mb-3" style="font-size:0.95rem; font-family:'Poppins',sans-serif;">Tools &amp; Resources</h6>
+        <ul class="list-unstyled" style="font-size:0.88rem;">
+          <li class="mb-2"><a href="emi-calculator.html" class="text-white text-decoration-none" style="color:#10b981 !important;">EMI Calculator</a></li>
+          <li class="mb-2"><a href="eligibility.html" class="text-secondary text-decoration-none" style="transition:color 0.2s;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color=''">Eligibility Check</a></li>
+          <li class="mb-2"><a href="compare-loans.html" class="text-secondary text-decoration-none" style="transition:color 0.2s;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color=''">Compare Loans</a></li>
+          <li class="mb-2"><a href="blog.html" class="text-secondary text-decoration-none" style="transition:color 0.2s;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color=''">Blog &amp; Tips</a></li>
+          <li class="mb-2"><a href="faq.html" class="text-secondary text-decoration-none" style="transition:color 0.2s;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color=''">FAQ</a></li>
+        </ul>
+      </div>
+
+      <!-- Newsletter -->
+      <div class="col-lg-4 col-md-6">
+        <h6 class="fw-700 text-white mb-3" style="font-size:0.95rem; font-family:'Poppins',sans-serif;">Stay Informed</h6>
+        <p style="font-size:0.85rem; margin-bottom:14px;">Subscribe for the latest loan offers, interest rate updates, and financial tips.</p>
+        <div class="input-group mb-3">
+          <input type="email" class="form-control" placeholder="Enter your email" style="background:rgba(255,255,255,0.08); border:1px solid rgba(255,255,255,0.15); color:#fff; font-size:0.88rem;" />
+          <button class="btn btn-primary" type="button" style="background:var(--primary); border:none; font-size:0.88rem; font-weight:600;">Subscribe</button>
+        </div>
+        <div class="mt-3" style="font-size:0.82rem;">
+          <div class="d-flex align-items-center gap-2 mb-2">
+            <i class="fa-solid fa-phone text-primary"></i>
+            <a href="tel:+918001234567" class="text-secondary text-decoration-none">+91 800 123 4567</a>
+          </div>
+          <div class="d-flex align-items-center gap-2 mb-2">
+            <i class="fa-solid fa-envelope text-primary"></i>
+            <a href="mailto:info@easyloanservices.in" class="text-secondary text-decoration-none">info@easyloanservices.in</a>
+          </div>
+          <div class="d-flex align-items-start gap-2">
+            <i class="fa-solid fa-location-dot text-primary mt-1"></i>
+            <span>123 Finance Tower, Bandra Kurla Complex, Mumbai – 400051</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr style="border-color:rgba(255,255,255,0.1); margin:32px 0 20px;" />
+    <div class="d-flex flex-wrap justify-content-between align-items-center gap-3" style="font-size:0.82rem;">
+      <div>© 2026 Easy Loan Services Pvt. Ltd. All rights reserved.</div>
+      <div class="d-flex gap-3 flex-wrap">
+        <a href="privacy.html" class="text-secondary text-decoration-none">Privacy Policy</a>
+        <a href="terms.html" class="text-secondary text-decoration-none">Terms of Use</a>
+        <a href="disclaimer.html" class="text-secondary text-decoration-none">Disclaimer</a>
+        <a href="grievance.html" class="text-secondary text-decoration-none">Grievance</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Scroll to top -->
+<button id="scrollTop" aria-label="Scroll to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+<!-- Bootstrap 5 JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- AOS -->
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>AOS.init({ duration: 700, once: true, offset: 60 });</script>
+
+<!-- Custom Scripts -->
+<script src="../js/emi-calculator.js"></script>
+<script src="../js/main.js"></script>
+
+<!-- Inline Bootstrap: navbar scroll effect + scroll-to-top -->
+<script>
+  // Navbar scroll effect
+  window.addEventListener('scroll', () => {
+    const nav = document.getElementById('mainNav');
+    const btn = document.getElementById('scrollTop');
+    if (window.scrollY > 60) { nav.classList.add('scrolled'); btn.classList.add('visible'); }
+    else { nav.classList.remove('scrolled'); btn.classList.remove('visible'); }
+  });
+  document.getElementById('scrollTop').addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+</script>
+
+<!-- Chatbot Script -->
+<script src="../js/chatbot-config.js"></script>
+<script src="../js/chatbot.js"></script>
+
+</body>
+</html>
