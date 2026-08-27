@@ -1,0 +1,25 @@
+# ============================================================
+# robots.txt — Easy Loan Services
+# ============================================================
+
+User-agent: *
+Allow: /
+
+# Disallow admin/private areas
+Disallow: /admin/
+Disallow: /cgi-bin/
+Disallow: /private/
+Disallow: /*.php$
+
+# Allow all search engines to crawl
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+# Sitemap location
+Sitemap: https://www.easyloanservices.in/sitemap.xml
